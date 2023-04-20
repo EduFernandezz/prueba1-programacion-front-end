@@ -1,0 +1,332 @@
+/*Primeros parametros para el margen/borde de la pagina en general*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+   
+    
+}
+/*diseño encabezado de la pagina (disposicion, posicion, alineacion, ancho de la seccion)*/
+.head {
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    height: 100px;
+    background: #ffffff;
+    position:fixed;
+    width: 100%;
+    z-index: 100;
+
+}
+
+/*Diseño de una pequeña seccion PARA QUE LA BARRA DE NAVEGACION SIGA EL MOVIMIENTO DE TODA LA PAGINA CON FIXED*/
+.head2{
+    height: 100px;
+    width: 100%;
+    background-color: #F67303;
+}
+
+.logo {
+    margin-left: 25px;
+}
+/*diseño espacion de la barra de navegacion superior*/
+.navbar{
+    display:inherit;
+    margin-right: 100px;
+    margin-left: 0;
+}
+
+/*Diseño del texto de la barra de navegacion*/
+.navbar a{
+    display:block;
+    color: #1F2242;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: "Effra", Sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+/*efecto en el texto de la barra de navegacion*/
+.navbar a:hover {
+    background-color: beige;
+}
+
+
+
+/*Diseño estructura de la portada*/
+.portada{
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+    background-image: url();
+    
+}
+
+/*------------slider y flechas cambio de portada-------------------------*/
+
+/*Diseño estilo de botones inferiores de la portada para el cambio de imagenes*/
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+/*Cambio de color de transicion en botones inferiores de la portada*/
+ .dot:hover{
+    background-color: #aa1111;
+}
+
+/*diseño boton previo en portada*/
+.prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 50px;
+    margin-top: -84px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    
+}
+/*diseño boton siguiente en portada*/
+.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 50px;
+    margin-top: -84px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    right: 0;
+}
+
+/*Cambio de color en la transicion /efecto de las flechas previo y siguiente*/
+.prev:hover{
+    background-color: rgba(0, 0,0, 0.8);
+}
+
+.next:hover{
+    background-color: rgba(0, 0,0, 0.8);
+}
+
+
+/*----------------------------Seccion contenido medio------------------------------------------------------------------------------*/
+
+/*parametros diseño titulos de las secciones*/
+.title{
+    color: #000000;
+    font-family: "Roboto", Sans-serif;
+    font-size: 30px;
+    font-weight: 550;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0;
+    padding-left: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    
+}
+
+/*Diseño titulo de la seccion "Locomocion"*/
+.contenido-locomocion h2{
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+}
+
+
+/*Color del fondo de las secciones de contenido medio*/
+.contenido-medio {
+    background-color: #f5edff;
+ 
+}
+
+/*disposicion y separacion de los cuadros que contienen las imagenes*/
+.contenedor_imagenes{
+    display: flex;
+    padding: 20px;
+ 
+}
+
+/*Posicion y margenes entre los cuadros que contienen las imagenes*/
+.contenedor_imagenes .imagen{
+   
+    position: relative;
+    padding:20px;
+}
+/*tamaño de las imagenes dentro de su cuadro*/
+.imagen img{
+    width: 100%;
+    height: 100%;
+   
+ 
+}
+
+
+/*parametros de una pequeña transicion al pasar el mouse por las imagenes*/
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    background:rgba(0, 0, 0, .30);
+    width: 100%;
+    height:0;
+    transition: .5 ease;
+    overflow: hidden;
+    padding: 0 ;
+}
+
+/*diseño y estilo de letras del texto dentro de las cajas de las imagenes*/
+.h2-mujer{
+    color: #ffffff;
+    text-shadow: 3px 3px 3px black;
+    font-size: 30px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Roboto", Sans-serif;
+  
+}
+
+
+/*alto y ancho de la transicion del cuadro de las imagenes*/
+.imagen:hover .overlay{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+    
+}
+
+/*Para que el texto de las imagenes no tenga el subrayado del link*/
+a {
+    text-decoration: none;
+}
+
+
+/*COLOR FONDO LOCOMOCION*/
+.contenido-locomocion{
+    background-color: #3A328A;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*PARA QUE LAS IMAGENES DE LA LOCOMOCION QUEDEN EN COLUMNAS*/
+.imagen-ubicacion{
+    display:flex;
+    justify-content: space-around;
+}
+
+
+/* --------------------------FOOTER--------------------------------------------*/
+
+
+
+
+/*FONDO Y ESPACIO DE LOS BORDES DEL FOOTER*/
+.footer{
+    background-color: #3A328A;
+    padding: 80px 0;
+
+}
+
+/*PARA QUE LOS ELEMENTOS DEL FOOTER QUEDEN EN COLUMNAS*/
+.columna_footer{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+/*FORMATO TEXTO (DIRECCION/HORARIO/CONTACTO)*/
+.footer_listas h3{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: "Effra", Sans-serif;  
+   
+}
+
+/*DARLE ESTILO AL HACER CLICK EN LINKS DEL FOOTER*/
+.footer_listas ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+    font-family: "Effra", Sans-serif;
+}
+
+/*COLOR Y FORMATO TEXTO FOOTER (LISTAS)*/
+.footer_listas ul{
+    color: #ffffff;
+    font-family: "Effra", Sans-serif;  
+}
+
+/*DARLE ESTILO AL HACER CLICK EN LINKS DEL FOOTER*/
+.footer_listas ul li a:hover{
+    color:#ffffff;
+    padding-left: 6px;
+    
+}
+
+/*FORMATO DE LINK FACEBOOK-INSTAGRAM*/
+.link_social a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgb(253, 253, 253);
+    margin: 0 10px;
+    text-align: center;
+    line-height: 40px;
+    border: 50%;
+    border-color: #ffffff;
+    color:#3A328A;
+    transition: all .5s ease;
+
+}
+
+
+/*PARA QUITAR EL PUNTO DE LA LISTA*/
+.lista_direccion ul{
+    list-style: none;
+    color: #ffffff;
+}
+
+/*Diseño y disposicion del texto de copyright*/
+.copyright p{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    font-family: "Effra", Sans-serif;
+}
+
+/*color del texto del link de copyright*/
+a{
+    color: #ffffff;
+}
+

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon-02-24x24.ico"><!--Icono en la pestaña de la pagina-->
+    <title>Viña Outlet Park</title><!--Titulo de la pestaña de la pagina-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!--PAGINA DE ICONOS-->
+    <link rel="stylesheet" href="css/estilo.css"> <!--REFERENCIA AL ARCHIVO CSS-->
+</head>
+
+<body>
+    <div class="head">
+        <div class="logo">
+            <a href="#" class="logo">
+                <img src="img\Elementos-sitio_Mesa-de-trabajo-1-okrs9iduu4qx30ojvjco09u4qdbvsktau5b1po33gc.png"> <!--LOGO PRINCIPAL DE LA PAGINA-->
+            </a>
+            
+        </div>
+        
+        <!--Barra de navegacion(tiendas-panoramas-ubicacion)-->
+        <nav class="navbar">
+            <a href = "#" class="imagen-menu-1">
+                <img src="img\ICON-24x24.ico" ><!--Icono para la barra de navegacion(tiendas)-->
+                <span class="imagen-menu-1">Tiendas </span>
+            </a>
+            <a href = "#" class="imagen-menu-1">
+                <img src="img\ICON_PANORAMAS-24x24.ico" ><!--Icono para la barra de navegacion(Panoramas)-->
+                <span class="imagen-menu-1">Panoramas </span>
+            </a>
+            <a href = "#" class="imagen-menu-1">
+                <img src="img\ICON_UBIC-24x24.ico" ><!--Icono para la barra de navegacion(Ubicacion)-->
+                <span class="imagen-menu-1">Ubicación </span>
+            </a>
+        </nav>
+    
+    </div>
+
+    <!--SEGUNDO ESPACIO IGUAL QUE EL HEAD, PARA QUE LA BARRA DE NAVEGACION SIGA EL MOVIMIENTO DE TODA LA PAGINA CON FIXED-->
+    <div class="head2">
+
+    </div>
+
+    <!--PORTADA-->
+    <section class="portada">
+        <img src="img/BANNER-WEB-HORARIOS-MARZO-1.jpg" width="100%" height="620px" alt="">
+
+       
+        <!--BOTONES INFERIORES PARA EL CAMBIO DE IMAGENES DE LA PORTADA SIN FUNCION POR QUE NO HEMOS TRABJADO
+        EN JAVASCRIPT AUN-->
+        <div style="text-align: center;">
+            <span class="dot" oneclick="currentSlides(1)"></span>
+            <span class="dot" oneclick="currentSlides(2)"></span>
+            <span class="dot" oneclick="currentSlides(3)"></span>
+        
+        </div>
+
+        <!--FLECHA CAMBIO DE IMAGENES(PREVIO-SIGUIENTE)-->
+        <a class="prev" oneclick="plusSlide">&#10094;</a>
+        <a class="next" oneclick="plusSlide">&#10095;</a>
+        
+    </section>
+    
+        
+    <!--COMTENIDO DEL MEDIO-->
+    <section class="contenido-medio">
+        <h2 class="title">Tiendas</h2>
+        <!--CREO DIVS PARA HACER REFERENCIA AL TAMAÑO DE LA CAJA QUE CONTIENE LA IMAGEN-->
+        <div class="linea"></div>
+        <div class="contenedor_imagenes">
+            
+            <div class="imagen">
+                <a href="https://outletpark.cl/mujer/"><!--creo un enlace para que cuando se aaprete en la caja de la seccion hombre te lleve a la pagina oficial/hombre-->
+                    <img src="img/mujer.png" alt="">
+                <h2 class="h2-mujer">Mujer</h2>
+                <div class="overlay"><!--SOLO PARA AGREGAR UN DETALLE DE UNA TRANSICION AL PASAR EL CURSOR POR LA SECCION DE LA IMAGEN-->
+                   
+                </div>
+                </a>
+                
+            </div>
+
+            <div class="imagen">
+                <a href="https://outletpark.cl/hombre/"><!--creo un enlace para que cuando se aaprete en la caja de la seccion hombre te lleve a la pagina oficial/hombre-->
+                    <img src="img/hombre.png" alt="">
+                <h2 class="h2-mujer">Hombre</h2>
+                <div class="overlay"><!--SOLO PARA AGREGAR UN DETALLE DE UNA TRANSICION AL PASAR EL CURSOR POR LA SECCION DE LA IMAGEN-->
+                   
+                </div>
+                </a>
+                
+            </div>
+
+            <div class="imagen">
+                <a href="https://outletpark.cl/infantil/"><!--creo un enlace para que cuando se aaprete en la caja de la seccion hombre te lleve a la pagina oficial/hombre-->
+                    <img src="img/infantil.png" alt="">
+                <h2 class="h2-mujer">Infantil</h2>
+                <div class="overlay"><!--SOLO PARA AGREGAR UN DETALLE DE UNA TRANSICION AL PASAR EL CURSOR POR LA SECCION DE LA IMAGEN-->
+                   
+                </div>
+                </a>
+                
+            </div>
+
+            <div class="imagen">
+                <a href="https://outletpark.cl/decohogar/"><!--creo un enlace para que cuando se aaprete en la caja de la seccion hombre te lleve a la pagina oficial/hombre-->
+                    <img src="img/decohogar.png" alt="">
+                <h2 class="h2-mujer">Deco Hogar</h2>
+                <div class="overlay"><!--SOLO PARA AGREGAR UN DETALLE DE UNA TRANSICION AL PASAR EL CURSOR POR LA SECCION DE LA IMAGEN-->
+                   
+                </div>
+                </a>
+                
+            </div>
+        </div>
+
+
+    </section>
+
+        
+    <!--Segunda seccion del contenido medio de panoramas-->
+    <section class="contenido-medio">
+        <h2 class="title">Panoramas</h2>
+
+        <div class="linea"></div>
+        <div class="contenedor_imagenes">
+            <div class="imagen">
+                <a href="#">
+                <img src="img/show_infantil.png" alt="">
+                <h2 class="h2-mujer">Show <br>
+                    Infantil</h2>
+                <div class="overlay">
+                   
+                </div>
+                </a>
+            </div>
+
+            <div class="imagen">
+                <a href="#">
+                <img src="img/discovery_land.png" alt="">
+                <h2 class="h2-mujer">Discovery <br>
+                        Land</h2>
+                <div class="overlay">
+                   
+                </div>
+                </a>
+            </div>
+
+            <div class="imagen">
+                <a href="">
+                <img src="img/Rumrum.png" alt="">
+                <h2 class="h2-mujer">Rum Rum Cars</h2>
+                <div class="overlay">
+                   
+                </div>
+                </a>
+            </div>
+
+            <div class="imagen">
+                <a href="#">
+                <img src="img/Patio_comida.png" alt="">
+                <h2 class="h2-mujer">Patio de <br>
+                        Comida</h2>
+                <div class="overlay">
+                   
+                </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="linea"></div>
+        <div class="contenedor_imagenes">
+            <div class="imagen">
+                <a href="#">
+                <img src="img/feria-de-emprendedores.png" alt="">
+                <h2 class="h2-mujer">Feria <br>
+                            de <br> 
+                            Emprendedores</h2>
+                <div class="overlay">
+                   
+                </div>
+                </a>
+            </div>
+
+            <div class="imagen">
+                <a href="#">
+                <img src="img/Panoramas1.png" alt="">
+                <h2 class="h2-mujer">Pronto más <br>Panoramas</h2>
+                <div class="overlay">
+                   
+                </div>
+                </a>
+            </div>
+
+            <div class="imagen">
+                <a href="#">
+                <img src="img/panoramas2.png" alt="">
+                <h2 class="h2-mujer">Pronto más <br>Panoramas</h2>
+                <div class="overlay">
+                   
+                </div>
+                </a>
+            </div>
+
+            
+        </div>
+    
+    </section>
+
+    <!--Creo una nueva seccion para insertar la imagen del mapa de la empresa-->
+    <section class="contenido-medio">
+        <h2 class="title">Ubicacion de las tiendas</h2><!--Es el titulo de la seccion-->
+        
+        <!--Se crea una division donde se colocara la imagen de la ubicacion del outlet-->
+        <div class="contenido-caja2">
+            <div class="box">
+                <img src="img/Captura de pantalla 2023-04-18 002945.png"  alt="">
+                
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--Creo otra seccion para colocar las imagenes de locomocion-->
+    <section class="contenido-locomocion">
+        <h2 class="title">Locomoción</h2><!--Es el titulo de la seccion-->
+
+
+        <!--Dentro de esta seccion creo otras donde pondre las imagenes de las locomociones de los puntos de la region de Valparaíso-->
+        <section class="imagen-ubicacion">
+            <div class="valpo">
+                
+                <img width="360" height="" src="img/valpo.png" class="attachment-full size-full" alt="" sizes="(max-width: 800px) 100vw, 800px">
+
+                
+            </div>
+
+            <div class="valpo">
+                
+                <img width="350" height="" src="img/viña.png" class="attachment-full size-full" alt="" sizes="(max-width: 800px) 100vw, 800px">
+
+                
+            </div>
+
+            <div class="valpo">
+                
+                <img width="350" height="" src="img/concon.png" class="attachment-full size-full" alt="" sizes="(max-width: 800px) 100vw, 800px">
+
+                
+            </div>
+
+            <div class="valpo">
+                
+                <img width="350" height="" src="img/peñablanca.png" class="attachment-full size-full" alt="" sizes="(max-width: 800px) 100vw, 800px">
+
+                
+            </div>
+            
+
+        </section>
+
+    
+
+    </section>
+
+    <!--Creo una seccion para la parte inderior de la pagina llamada footer-->
+    <footer class="footer">
+        <!--Creo distintas secciones para la colocacion de listas-->
+        <div class="contenido_footer">
+            <div class="columna_footer">
+                <!--El footer tendra 3 secciones la primera es de la direccion del outlet con mapa-->
+                <div class="footer_listas">
+                    <h3>Dirección</h3><!--Titulo de la primera lista-->
+                    <div class="lista_direccion">
+                        <ul class="lista ul">
+                            <li class="elemento_direccion">
+                                <a href="https://g.page/vinaoutletpark?share"><!--Link de referencia al apretar el texto del mapa-->
+                                <span class="icono">
+                                    <i class="fas fa-map-marker-alt"></i><!--Icono del mapa-->
+                                </span>
+                                <span class="texto_direccion">Camino Internacional 2440, Reñaca Alto, Viña del Mar</span><!--texto del mapa-->
+                                </a>
+                            </li>
+
+                            <!--Figura del mapa extraido de google-->
+                            <figure>
+                                <iframe   src="https://maps.google.com/maps?q=Camino%20Internacional%202440%2C%20Vi%C3%B1a%20del%20mar&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" title="Camino Internacional 2440, Viña del mar" aria-label="Camino Internacional 2440, Viña del mar" width="500px"></iframe>
+                            </figure>
+                        </ul>
+                    </div>
+                    
+                </div>
+
+
+<!--Segunda seccion del footer con 2 listas dentro de una en general-->
+                <div class="footer_listas">
+                    <h3>Horario</h3>
+                    <ul>
+                        <li><a href="#">LUNES A DOMINGO</a></li>
+                        <ul>de 10:00 a 20:00 hrs.</ul>
+                        <br>
+                    
+                        <li><a href="#">ESTACIONAMIENTO</a></li>
+                        <ul><u>Gratis</u> los primeros 30 minutos</ul><br>
+                        <ul>Cada 1/2 hora = $500 pesos</ul><br>
+                        <ul>Tarifa Máxima = $3500 pesos</ul>
+                        
+                    </ul>
+                </div>
+                
+                <!--La tercera seccion del footer con 3 listas dentro de una general-->
+                <div class="footer_listas">
+                    <h3>Contacto</h3>
+                    <div class="lista_direccion">
+                        <ul class="lista ul">
+                            <li class="elemento_direccion">
+                                <a href="mailto:novedades@outletpark.cl"><!--referencia del primer elemento (mail)-->
+                                <span class="icono">
+                                    <i class="fas fa-envelope"></i><!--Icono del texto-->
+                                </span>
+                                <span class="texto_direccion">Novedades@outletpark.cl</span><!--Boton del texto email-->
+                                </a>
+                            </li>
+                            <li class="elemento_direccion">
+                                <a href="https://outletpark.cl/tel:322514100">
+                                <span class="icono">
+                                    <i class="fas fa-phone"></i>
+                                </span>
+                                <span class="texto_direccion">32 251 4100</span>
+                                </a>
+                            </li>
+                            <li class="elemento_direccion">
+                                <a href="https://outletpark.cl/contacto/">
+                                <span class="icono">
+                                    <i class="fas fa-inbox"></i>
+                                </span>
+                                <span class="texto_direccion">Enviar Mensaje</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--seccion de los liks-->
+                    <div class="link_social">
+                        <a href="https://www.facebook.com/outletparkvina"><i class="fab fa-facebook-f"></i></a><!--icono y referencia de facebook-->
+                        <a href="https://www.instagram.com/outlet_park/?__coig_restricted=1"><i class="fab fa-instagram"></i></a><!--Icono y referencia de instagram-->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Por ultimo la seccion de copyright-->
+        <div class="copyright">
+            <p>© 2020 Viña Outlet Park – Todos los derechos reservados. Diseñado por 
+                <a href="https://worklab.cl"> WORKLab</a><!--Referencia al link de la empresa creadora de la pagina del outlet-->
+            </p>
+        </div>
+    </footer>
+    
+  
+
+</body>
+</html>
